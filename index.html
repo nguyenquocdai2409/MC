@@ -14,8 +14,12 @@
       referrerpolicy="no-referrer"
     />
     <title>Noel 2023!</title>
+
   </head>
   <body>
+    <audio id="myAudio" controls autoplay loop>
+        <source src="/song/lastchrismas.mp3" type="audio/mpeg" />
+      </audio>
     <div class="container">
       <div class="bgr-container">
         <div class="box-bgr">
@@ -36,8 +40,6 @@
             <img src="image/house.png" alt="" />
           </div>
         </div>
-
-
       </div>
       <section>
         <div class="box-santa">
@@ -281,8 +283,13 @@
         >Em chờ chút, có lá thư mở ra để đọc đó</marquee
       >
     </div>
+
   </body>
   <script src="app.js"></script>
-
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const audio = document.getElementById('myAudio');
+      audio.play();
+    });
+    </script>
 </html>
-<!-- https://cliply.co/wp-content/uploads/2019/12/371912430_SANTA_CLAUS_400px.gif -->
